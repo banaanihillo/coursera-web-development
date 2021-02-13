@@ -31,6 +31,16 @@ section > header {
     align-self: flex-end;
     font-size: 1.25em;
     padding: 0;
+    border: 1px solid violet;
+}
+
+#assignment-container section:nth-child(2) > header {
+    background-color: blueviolet;
+    color: wheat;
+}
+
+#assignment-container section:nth-child(3) > header {
+    background-color: rebeccapurple;
 }
 
 @media screen and (max-width: 767px) {
