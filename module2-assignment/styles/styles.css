@@ -19,9 +19,20 @@ html {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     #assignment-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /*
+    If the number of sections is odd,
+    stretch out the last one
+    In this case, of course,
+    the number of sections (3) is known a priori,
+    but this would work for 5, 7, ... items as well
+    */
+    section:nth-of-type(odd):last-of-type {
+        grid-column: 1 / 3;
     }
 }
 
