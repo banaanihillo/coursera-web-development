@@ -1,0 +1,26 @@
+html {
+    background-color: black;
+    color: deeppink;
+}
+
+#assignment-container {
+    display: grid;
+}
+
+@media screen and (max-width: 767px) {
+    #assignment-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #assignment-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #assignment-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
