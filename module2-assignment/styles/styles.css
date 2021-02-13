@@ -3,6 +3,10 @@ html {
     color: deeppink;
 }
 
+h1 {
+    font-size: 1.75em;
+}
+
 #assignment-container {
     display: grid;
     gap: 1em;
@@ -10,7 +14,23 @@ html {
 
 #assignment-container section {
     border: 1px solid hotpink;
+}
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section * {
     padding: 1em;
+}
+
+section > header {
+    background-color: darkmagenta;
+    color: pink;
+    align-self: flex-end;
+    font-size: 1.25em;
+    padding: 0;
 }
 
 @media screen and (max-width: 767px) {
