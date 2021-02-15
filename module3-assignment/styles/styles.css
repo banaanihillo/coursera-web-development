@@ -1,4 +1,4 @@
-* {
+html {
     background-color: black;
     color: deeppink;
 }
@@ -95,4 +95,12 @@ section > h3 {
     #section-container {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+a {
+    color: cyan;
+}
+
+section p {
+    margin: 0.5em;
 }
