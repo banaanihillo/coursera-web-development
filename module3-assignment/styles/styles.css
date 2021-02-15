@@ -30,26 +30,16 @@ nav > span {
     padding: 1em;
 }
 
-.menu-visible {
-    display: initial;
-}
-
-@media screen and (min-width: 762px) {
-    .navigation-menu-button,
-    .menu-visible {
-        display: none;
-    }
-}
-
+/* Menu (as in, food item menu) layout */
 header {
     padding-bottom: 1em;
 }
 
-section > header > h2 {
+main > header > h2 {
     text-align: center;
 }
 
-article > h3 {
+section > h3 {
     text-align: center;
 }
 
@@ -66,4 +56,43 @@ article > h3 {
 #fava-beans {
     background-color: brown;
     color: ivory;
+}
+
+#section-container {
+    display: grid;
+    grid-gap: 1em;
+    /* Unsupported attribute on Gecko, so just use both */
+    gap: 1em;
+}
+
+/* Hide (remove) the extra navigation menu on larger screens */
+.navigation-menu-button,
+.menu-visible {
+    display: none;
+}
+
+@media screen and (max-width: 687px) {
+    .navigation-menu-button,
+    .menu-visible {
+        display: initial;
+    }
+}
+
+/* Change to multiple columns as the screen size grows */
+
+@media screen and (min-width: 688px) and (max-width: 991px) {
+    #section-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* "Stretch" the last section to take both columns */
+    section:nth-of-type(odd):last-of-type {
+        grid-column: 1 / 3;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #section-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
