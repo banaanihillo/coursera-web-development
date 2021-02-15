@@ -44,3 +44,26 @@ nav > span {
 header {
     padding-bottom: 1em;
 }
+
+section > header > h2 {
+    text-align: center;
+}
+
+article > h3 {
+    text-align: center;
+}
+
+#mung-beans {
+    background-color: darkolivegreen;
+    color: ivory;
+}
+
+#chickpeas {
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+#fava-beans {
+    background-color: brown;
+    color: ivory;
+}
