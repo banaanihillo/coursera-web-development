@@ -1,4 +1,16 @@
-body {
+* {
     background-color: black;
     color: deeppink;
+}
+
+@media screen and (min-width: 762px) {
+    .navigation-menu-button {
+        display: none;
+    }
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
