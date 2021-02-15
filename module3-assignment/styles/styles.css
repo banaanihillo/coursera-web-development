@@ -3,14 +3,44 @@
     color: deeppink;
 }
 
+nav > span {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+/* Navigation for small screens */
+.navigation-menu-button {
+    height: 4em;
+    width: 4em;
+}
+
+.navigation-menu {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+}
+
+.navigation-menu li {
+    list-style: none;
+    background-color: darkmagenta;
+    border: 1px solid magenta;
+    color: plum;
+    padding: 1em;
+}
+
+.menu-visible {
+    display: initial;
+}
+
 @media screen and (min-width: 762px) {
-    .navigation-menu-button {
+    .navigation-menu-button,
+    .menu-visible {
         display: none;
     }
 }
 
-nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+header {
+    padding-bottom: 1em;
 }
