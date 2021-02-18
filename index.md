@@ -5,3 +5,6 @@ Module 2 assignment:
 
 Module 3 assignment:
 [Module 3 assignment](https://banaanihillo.github.io/coursera-web-development/module3-assignment/ "Module 3 assignment")
+
+Module 4 assignment:
+[Module 4 assignment](https://banaanihillo.github.io/coursera-web-development/module4-assignment/ "Module 4 assignment")
